@@ -12,6 +12,7 @@
 
 .container {
 	display: flex;
+	width: 100%;
 }
 
 .container > li {
@@ -25,10 +26,6 @@ ul {
 	overflow: hidden;
 	background-color: #333;
 }
-
-/*li {
-
-}*/
 
 	li a {
 		display: block;
