@@ -93,8 +93,8 @@ li a {
 	&-header {
 		width: 100%;
 		background-color: #60be86;
-		border-bottom: solid black 10px;
-		border-top: solid black 10px;
+		border-bottom: $card-border;
+		border-top: $card-border;
 	}
 }
 
