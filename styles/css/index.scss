@@ -1,16 +1,18 @@
+@import 'variables.scss';
+
 body {
 	text-align: center;
 }
 
 h1 {
-	font-family: 'Archivo', sans-serif;
+	font-family: $font;
 	font-size: 3.5em;
 	font-weight: bold;
 }
 
 .btn {
 	font-size: 1.25em;
-	font-family: 'Archivo', sans-serif;
+	font-family: $font;
 }
 
 #navbar {
@@ -49,7 +51,6 @@ li a {
 		background-color: #111;
 	}
 }
-
 
 .bottom-row {
 	margin-top: 6em;
