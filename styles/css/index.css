@@ -1,0 +1,87 @@
+body {
+  text-align: center; }
+
+h1 {
+  font-family: 'Archivo', sans-serif;
+  font-size: 3.5em;
+  font-weight: bold; }
+
+.btn {
+  font-size: 1.25em;
+  font-family: 'Archivo', sans-serif; }
+
+#navbar {
+  width: 100%;
+  top: 0;
+  position: absolute;
+  z-index: 999;
+  opacity: 0.8; }
+
+.container {
+  display: flex;
+  width: 100%; }
+  .container li {
+    flex: 1; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333; }
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none; }
+  li a:hover {
+    background-color: #111; }
+
+.bottom-row {
+  margin-top: 6em; }
+
+.iframe-border {
+  margin: 0 auto;
+  border: 10px solid #ddd; }
+
+.coding-languages {
+  background-color: #60be86; }
+
+.card-image1, .card-image2, .card-image3, .card-image4 {
+  background-size: cover;
+  opacity: 0.8; }
+.card-image1 {
+  background-image: url("../images/image-1.jpg"); }
+.card-image2 {
+  background-image: url("../images/image-2.jpg"); }
+.card-image3 {
+  background-image: url("../images/image-3.jpg"); }
+.card-image4 {
+  background-image: url("../images/image-4.jpg"); }
+.card-header {
+  width: 100%;
+  background-color: #60be86;
+  border-bottom: solid black 10px;
+  border-top: solid black 10px; }
+
+.fa-github, .fa-facebook-square {
+  font-size: 2.5em; }
+  .fa-github:hover, .fa-facebook-square:hover {
+    opacity: 0.2; }
+
+.social-media {
+  all: unset; }
+  .social-media:hover {
+    all: unset;
+    cursor: pointer; }
+
+@media (max-width: 792px) {
+  #navbar {
+    display: none; }
+
+  .container {
+    display: none; } }
+
+/*# sourceMappingURL=index.css.map */

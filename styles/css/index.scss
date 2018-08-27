@@ -1,4 +1,4 @@
-﻿body {
+body {
 	text-align: center;
 }
 
@@ -24,11 +24,11 @@ h1 {
 .container {
 	display: flex;
 	width: 100%;
-}
 
-	.container > li {
+	li {
 		flex: 1;
 	}
+}
 
 ul {
 	list-style-type: none;
@@ -44,11 +44,12 @@ li a {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-}
 
-	li a:hover {
+	&:hover {
 		background-color: #111;
 	}
+}
+
 
 .bottom-row {
 	margin-top: 6em;
@@ -63,54 +64,61 @@ li a {
 	background-color: #60be86;
 }
 
-.card-image1, .card-image2, .card-image3, .card-image4 {
-	background-size: cover;
-	opacity: 0.8;
-}
-.card-image1 {
-	background-image: url("../images/image-1.jpg");
-}
+.card {
+	&-image1,
+	&-image2,
+	&-image3,
+	&-image4 {
+		background-size: cover;
+		opacity: 0.8;
+	}
 
-.card-image2 {
-	background-image: url("../images/image-2.jpg");
-}
+	&-image1 {
+		background-image: url("../images/image-1.jpg");
+	}
 
-.card-image3 {
-	background-image: url("../images/image-3.jpg");
-}
+	&-image2 {
+		background-image: url("../images/image-2.jpg");
+	}
 
-.card-image4 {
-	background-image: url("../images/image-4.jpg");
-}
+	&-image3 {
+		background-image: url("../images/image-3.jpg");
+	}
 
-.card-header {
-	width: 100%;
-	background-color: #60be86;
-	border-bottom: solid black 10px;
-	border-top: solid black 10px;
+	&-image4 {
+		background-image: url("../images/image-4.jpg");
+	}
+
+	&-header {
+		width: 100%;
+		background-color: #60be86;
+		border-bottom: solid black 10px;
+		border-top: solid black 10px;
+	}
 }
 
 .fa-github, .fa-facebook-square {
 	font-size: 2.5em;
-}
 
-	.fa-github:hover, .fa-facebook-square:hover {
+	&:hover {
 		opacity: 0.2;
 	}
+}
 
 .social-media {
 	all: unset;
-}
 
-	.social-media:hover {
+	&:hover {
 		all: unset;
 		cursor: pointer;
 	}
+}
 
 @media (max-width: 792px) {
 	#navbar {
 		display: none;
 	}
+
 	.container {
 		display: none;
 	}
