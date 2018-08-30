@@ -29,11 +29,11 @@
 
 	<div id="fullpage">
 
-		<div class="section" data-anchor="home">
+		<div class="section" data-anchor="home" id="home">
 			<h1>Sam Egger</h1>
 		</div>
 
-		<div class="section" data-anchor="aboutMe">
+		<div class="section" data-anchor="aboutMe" id="about-me">
 			<h1>About Me</h1>
 			<div class="left">
 				<img src="images/sam.jpg" alt="Photo of Sam" />
@@ -43,7 +43,7 @@
 			</div>
 		</div>
 
-		<div class="section" data-anchor="hobbies">
+		<div class="section" data-anchor="hobbies" id="hobbies">
 			<div class="slide" data-anchor="hobbies-1">
 				<h1>Piano</h1>
 
@@ -176,7 +176,7 @@
 			</div>
 		</div>
 
-		<div class="section" data-anchor="contact">
+		<div class="section" data-anchor="contact" id="contact">
 			<h1>Contact</h1>
 			<div class="bottom-row">
 				<a class="social-media" href="https://www.github.com/segger87" target="_blank"><i class="fab fa-github"></i></a>
@@ -190,7 +190,6 @@
 <script>
 	new fullpage('#fullpage', {
 		anchors: ['home', 'aboutMe', 'hobbies', 'contact'],
-		sectionsColor: ['#f2f2f2', '#4BBFC3', '#60be86', 'whitesmoke', '#000'],
 		autoScrolling: true,
 		scrollHorizontally: true,
 		licenseKey: "OPEN-SOURCE-GPLV3-LICENSE"

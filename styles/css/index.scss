@@ -23,6 +23,22 @@ h1 {
 	opacity: 0.8;
 }
 
+#home {
+	background-color: $home-background-color;
+}
+
+#about-me{
+	background-color: $about-me-background-color;
+}
+
+#hobbies {
+	background-color: $hobbies-background-color;
+}
+
+#contact {
+	background-color: $contact-background-color;
+}
+
 .container {
 	display: flex;
 	width: 100%;
@@ -62,7 +78,7 @@ li a {
 }
 
 .coding-languages {
-	background-color: #60be86;
+	background-color: $hobbies-background-color;
 }
 
 .card {
@@ -75,19 +91,19 @@ li a {
 	}
 
 	&-image1 {
-		background-image: url("../../images/image-1.jpg");
+		background-image: url("../../images/piano-background-1.jpg");
 	}
 
 	&-image2 {
-		background-image: url("../../images/image-2.jpg");
+		background-image: url("../../images/piano-background-2.jpg");
 	}
 
 	&-image3 {
-		background-image: url("../../images/image-3.jpg");
+		background-image: url("../../images/piano-background-3.jpg");
 	}
 
 	&-image4 {
-		background-image: url("../../images/image-4.jpg");
+		background-image: url("../../images/piano-background-4.jpg");
 	}
 
 	&-header {
