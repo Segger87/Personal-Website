@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	var trendingUrl = "https://api.giphy.com/v1/gifs/trending?api_key=jmJFGQx32Mt6etpKr7aTpjXmn977kSYi&limit=10&rating=G";
 	var giphyContainer = document.getElementById("giphy-container");
 
-	function writeSinglePostToPage(post) {
+	function writeSingleGifToPage(post) {
 
 		var containerDiv = document.createElement("div");
 		containerDiv.classList.add("giphy-posts");
@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		giphyContainer.appendChild(containerDiv);
 	}
 
-	function writeAllPostsToPage(postArray) {
-		postArray.forEach(writeSinglePostToPage);
+	function writeAllGifsToPage(postArray) {
+		postArray.forEach(writeSingleGifToPage);
 	}
 
 	function parseJSONFromResponse(response) {
@@ -40,6 +40,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	fetch(trendingUrl)
 		.then(parseJSONFromResponse)
 		.then(extractPostArrayFromJSON)
-		.then(writeAllPostsToPage)
+		.then(writeAllGifsToPage)
 		.catch(handleError);
 });
