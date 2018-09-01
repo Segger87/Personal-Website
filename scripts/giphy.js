@@ -1,27 +1,27 @@
 document.addEventListener("DOMContentLoaded", function (event) {
 	console.log("DOM fully loaded and parsed");
 
-	var trendingUrl = "https://api.giphy.com/v1/gifs/trending?api_key=jmJFGQx32Mt6etpKr7aTpjXmn977kSYi&limit=10&rating=G";
-	var giphyContainer = document.getElementById("giphy-container");
+	const trendingUrl = "https://api.giphy.com/v1/gifs/trending?api_key=jmJFGQx32Mt6etpKr7aTpjXmn977kSYi&limit=10&rating=G";
+	const giphyContainer = document.getElementById("giphy-container");
 
-	function writeSingleGifToPage(post) {
+	function writeSingleGifToPage(gif) {
 
 		var containerDiv = document.createElement("div");
 		containerDiv.classList.add("giphy-posts");
 		giphyContainer.appendChild(containerDiv);
 
-		if (post.images) {
+		if (gif.images) {
 			var newImage = document.createElement("img");
 			newImage.classList.add("giphy-image");
-			newImage.src = post.images.downsized.url;
+			newImage.src = gif.images.downsized.url;
 			containerDiv.appendChild(newImage);
 		}
 
 		giphyContainer.appendChild(containerDiv);
 	}
 
-	function writeAllGifsToPage(postArray) {
-		postArray.forEach(writeSingleGifToPage);
+	function writeAllGifsToPage(gifArray) {
+		gifArray.forEach(writeSingleGifToPage);
 	}
 
 	function parseJSONFromResponse(response) {
